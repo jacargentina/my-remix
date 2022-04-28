@@ -1,4 +1,4 @@
-import { Form } from "@remix-run/react";
+import { Form, Link } from "@remix-run/react";
 import { ActionFunction, json } from "@remix-run/node";
 import { getTextAsMdx } from "~/utils.server";
 
@@ -22,6 +22,7 @@ export default function Index() {
         <input name="text" id="text" type="text" />
         <button>Convert</button>
       </Form>
+      <Link to="/recaptcha">Recaptcha</Link>
     </div>
   );
 }
